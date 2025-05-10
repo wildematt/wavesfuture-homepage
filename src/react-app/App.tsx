@@ -2,6 +2,7 @@
 
 import React, { useEffect, useRef } from 'react';
 import './App.css';
+import bgVideo from './assets/bgvideo.mp4';
 
 const App: React.FC = () => {
   const titleRef = useRef<HTMLHeadingElement>(null);
@@ -32,25 +33,43 @@ const App: React.FC = () => {
       {/* Navigation Bar */}
       <nav className="bg-white/90 backdrop-blur-md fixed w-full z-10 border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between h-16">
-            <div className="flex items-center">
-              <div className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">Wavesfuture</div>
+          <div className="flex items-center justify-between h-16">
+            <div className="flex items-center space-x-12">
+              <div className="text-2xl font-semibold text-black tracking-tight">Wavesfuture</div>
+              <div className="hidden md:flex items-center space-x-8">
+                <a href="#mission" className="text-gray-700 hover:text-blue-600 transition duration-300">Mission</a>
+                <a href="#technologies" className="text-gray-700 hover:text-blue-600 transition duration-300">Technologies</a>
+                <a href="#products" className="text-gray-700 hover:text-blue-600 transition duration-300">Products</a>
+                <a href="#about" className="text-gray-700 hover:text-blue-600 transition duration-300">About</a>
+                <a href="#contact" className="text-gray-700 hover:text-blue-600 transition duration-300">Contact</a>
+              </div>
             </div>
-            <div className="hidden md:flex items-center space-x-8">
-              <a href="#mission" className="text-gray-700 hover:text-blue-600 transition duration-300">Mission</a>
-              <a href="#technologies" className="text-gray-700 hover:text-blue-600 transition duration-300">Technologies</a>
-              <a href="#products" className="text-gray-700 hover:text-blue-600 transition duration-300">Products</a>
-              <a href="#about" className="text-gray-700 hover:text-blue-600 transition duration-300">About</a>
-              <a href="#contact" className="text-gray-700 hover:text-blue-600 transition duration-300">Contact</a>
+            <div>
+              {/* 移除了Get Started按钮 */}
             </div>
           </div>
         </div>
       </nav>
 
       {/* Hero Section */}
-      <section id="mission" className="pt-20 bg-white overflow-hidden">
-        <div className="max-w-7xl mx-auto">
-          <div className="py-20 md:py-28 px-4 sm:px-6 lg:px-8">
+      <section id="mission" className="pt-20 bg-white overflow-hidden relative min-h-screen flex items-center">
+        {/* 视频背景 */}
+        <div className="absolute inset-0 w-full h-full">
+          <video 
+            src={bgVideo} 
+            autoPlay 
+            loop 
+            muted 
+            playsInline
+            className="absolute w-screen h-full object-cover"
+            style={{ objectFit: 'cover', objectPosition: 'center' }}
+          />
+          <div className="absolute inset-0 bg-white/50"></div>
+        </div>
+        
+        {/* 内容 */}
+        <div className="max-w-7xl mx-auto relative z-10 w-full">
+          <div className="px-4 sm:px-6 lg:px-8">
             <div className="text-center max-w-3xl mx-auto">
               <h1 ref={titleRef} className="text-5xl sm:text-6xl md:text-7xl font-bold tracking-tight text-gray-900 animate-on-scroll">
                 We're building the future of <span className="text-blue-600">human connection</span>
@@ -59,19 +78,9 @@ const App: React.FC = () => {
                 Pioneering technologies that connect people in meaningful ways and shape the future of digital interaction.
               </p>
               <div className="mt-10 animate-on-scroll">
-                <a href="#technologies" className="inline-flex items-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 md:py-4 md:text-lg md:px-10 transition duration-300">
-                  Explore our technologies
-                </a>
+                {/* 移除了Explore our technologies按钮 */}
               </div>
             </div>
-          </div>
-          <div className="relative h-[70vh] bg-gray-100">
-            <img 
-              src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80" 
-              alt="Digital Technology" 
-              className="w-full h-full object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-white via-transparent to-transparent"></div>
           </div>
         </div>
       </section>
@@ -91,7 +100,7 @@ const App: React.FC = () => {
               {
                 title: "Artificial Intelligence",
                 description: "Advanced AI systems that understand and enhance human interactions while making technology more intuitive and accessible.",
-                image: "https://images.unsplash.com/photo-1680697964095-9bebe66b6dc2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
+                image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
               },
               {
                 title: "Extended Reality",
@@ -115,12 +124,7 @@ const App: React.FC = () => {
                 <h3 className="text-2xl font-semibold text-gray-900 mb-3">{tech.title}</h3>
                 <p className="text-gray-600 leading-relaxed">{tech.description}</p>
                 <div className="mt-4">
-                  <a href="#" className="text-blue-600 hover:text-blue-800 font-medium flex items-center">
-                    Learn more
-                    <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-                    </svg>
-                  </a>
+                  {/* 移除了Explore more按钮 */}
                 </div>
               </div>
             ))}
@@ -138,9 +142,7 @@ const App: React.FC = () => {
             Through AI, extended reality, and advanced digital solutions, we're creating technologies that help people build meaningful connections.
           </p>
           <div className="mt-10 animate-on-scroll">
-            <a href="#products" className="inline-flex items-center px-8 py-3 border border-white text-base font-medium rounded-md text-blue-600 bg-white hover:bg-blue-50 md:py-4 md:text-lg md:px-10 transition duration-300">
-              Discover our products
-            </a>
+            {/* 移除了Discover our products按钮 */}
           </div>
         </div>
       </section>
@@ -166,12 +168,6 @@ const App: React.FC = () => {
               </div>
               <h3 className="text-3xl font-bold text-gray-900 mb-3">Smart Vision Glasses</h3>
               <p className="text-xl text-gray-600 mb-6">Capture, share and stay in the moment, completely hands-free.</p>
-              <a href="#" className="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center">
-                Shop now
-                <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-                </svg>
-              </a>
             </div>
 
             <div className="flex flex-col animate-on-scroll">
@@ -184,12 +180,6 @@ const App: React.FC = () => {
               </div>
               <h3 className="text-3xl font-bold text-gray-900 mb-3">Immersive VR Headset</h3>
               <p className="text-xl text-gray-600 mb-6">Dive into the wonder of mixed reality with our newest technology.</p>
-              <a href="#" className="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center">
-                Shop now
-                <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-                </svg>
-              </a>
             </div>
           </div>
         </div>
@@ -207,12 +197,7 @@ const App: React.FC = () => {
                 Our technologies are designed to enhance human connection and create meaningful experiences.
               </p>
               <div className="space-x-4 animate-on-scroll">
-                <a href="#technologies" className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 transition duration-300">
-                  Explore our technologies
-                </a>
-                <a href="#" className="inline-flex items-center px-6 py-3 border border-gray-300 text-base font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 transition duration-300">
-                  Go to Help Center
-                </a>
+                {/* 移除了Explore our technologies和Go to Help Center按钮 */}
               </div>
             </div>
             <div className="mt-10 md:mt-0 md:w-1/3">
@@ -265,71 +250,8 @@ const App: React.FC = () => {
                 <h3 className="text-xl font-bold text-gray-900 mb-2">{item.title}</h3>
                 <p className="text-gray-600">{item.description}</p>
                 <div className="mt-4">
-                  <a href="#" className="text-blue-600 hover:text-blue-800 font-medium flex items-center">
-                    Learn more
-                    <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-                    </svg>
-                  </a>
+                  {/* 移除了Learn more按钮 */}
                 </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Leadership Section */}
-      <section className="py-24 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="md:flex md:items-center md:justify-between mb-16">
-            <div className="md:max-w-2xl">
-              <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6 animate-on-scroll">
-                Meet our leadership
-              </h2>
-              <p className="text-xl text-gray-600 animate-on-scroll">
-                Wavesfuture's leaders are guiding our company as mixed reality and AI evolve, helping to create the next evolution of digital connection.
-              </p>
-            </div>
-            <div className="mt-6 md:mt-0">
-              <a href="#" className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 transition duration-300 animate-on-scroll">
-                Get to know our leadership
-              </a>
-            </div>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            {[
-              {
-                name: "John Anderson",
-                role: "Chief Executive Officer",
-                image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-              },
-              {
-                name: "Sarah Mitchell",
-                role: "Chief Technology Officer",
-                image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-              },
-              {
-                name: "Michael Chen",
-                role: "Chief Product Officer",
-                image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-              },
-              {
-                name: "Amelia Rodriguez",
-                role: "Chief Marketing Officer",
-                image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-              }
-            ].map((leader, index) => (
-              <div key={index} className="flex flex-col animate-on-scroll">
-                <div className="rounded-lg overflow-hidden aspect-square mb-4">
-                  <img 
-                    src={leader.image} 
-                    alt={leader.name} 
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <h3 className="text-xl font-semibold text-gray-900">{leader.name}</h3>
-                <p className="text-gray-600">{leader.role}</p>
               </div>
             ))}
           </div>
@@ -418,9 +340,7 @@ const App: React.FC = () => {
                   <label htmlFor="message" className="block text-sm font-medium text-gray-700">Message</label>
                   <textarea name="message" id="message" rows={4} placeholder="Your message" className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"></textarea>
                 </div>
-                <button type="submit" className="w-full bg-blue-600 border border-transparent rounded-md py-3 px-4 text-white font-medium hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition duration-300">
-                  Send Message
-                </button>
+                {/* 移除了Send Message按钮 */}
               </form>
             </div>
           </div>
@@ -432,7 +352,7 @@ const App: React.FC = () => {
         <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="col-span-1 md:col-span-2">
-              <div className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent mb-4">Wavesfuture</div>
+              <div className="text-2xl font-semibold text-black tracking-tight mb-4">Wavesfuture</div>
               <p className="text-gray-600 max-w-md">
                 Pioneering technologies that connect people in meaningful ways and shape the future of digital interaction.
               </p>
