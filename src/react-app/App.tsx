@@ -162,7 +162,7 @@ const App: React.FC = () => {
             <div className="md:w-1/2">
               <div className="overflow-hidden rounded-lg">
                 <img 
-                  src="/public/casestudy.png" 
+                  src="/casestudy.png" 
                   alt="Software Interface" 
                   className="w-full h-auto transform scale-105"
                 />
@@ -190,7 +190,7 @@ const App: React.FC = () => {
             <div className="md:w-1/2">
               <div className="overflow-hidden rounded-lg">
                 <img 
-                  src="/public/didi.jpg" 
+                  src="/didi.jpg" 
                   alt="Design Course Interface" 
                   className="w-full h-auto transform scale-105"
                 />
