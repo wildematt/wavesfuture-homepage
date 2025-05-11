@@ -86,7 +86,7 @@ const App: React.FC = () => {
       </section>
 
       {/* Technologies Section */}
-      <section id="innovations" className="py-24 bg-white">
+      <section id="innovations" className="pt-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-20 animate-on-scroll">
             <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
@@ -203,10 +203,10 @@ const App: React.FC = () => {
             <div className="md:w-1/2 md:pr-12 mb-8 md:mb-0">
               <div className="text-sm font-medium text-blue-600 mb-2">P/3</div>
               <h3 className="text-3xl md:text-4xl font-bold mb-6">
-                How Booost uses AI to power software design + subscriptions
+               More
               </h3>
               <p className="text-lg text-gray-600 mb-8">
-                我们的AI驱动设计工具简化了创意流程，提升工作效率并降低成本，让您的设计团队能够专注于创新。
+              农副产品溯源管理软件,包装分拣信息化管理软件,车联网智能监控管理软件,仓储信息化智慧管理软件,数据容灾备份自动化智慧软件
               </p>
               <a href="#" className="inline-flex items-center px-6 py-3 bg-blue-600 text-white font-medium rounded-full hover:bg-blue-700 transition duration-300">
                 了解更多案例
