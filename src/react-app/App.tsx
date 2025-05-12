@@ -384,9 +384,9 @@ const App: React.FC = () => {
             <div>
               <h3 className="text-gray-900 text-lg font-semibold mb-4">Products</h3>
               <div className="space-y-2">
-                <a href="#" className="text-gray-400 block hover:text-blue-600 transition duration-300">Booost</a>
-                <a href="#" className="text-gray-400 block hover:text-blue-600 transition duration-300">Immersive VR Headset</a>
-                <a href="#" className="text-gray-400 block hover:text-blue-600 transition duration-300">AI Assistants</a>
+                <a href="https://www.booost.cc/" target='_blank' className="text-gray-400 block hover:text-blue-600 transition duration-300">Booost</a>
+                <a href="https://finetabs.com/" target='_blank' className="text-gray-400 block hover:text-blue-600 transition duration-300">FineTabs</a>
+                <a href="https://paper.finetabs.com/#/paper" target='_blank' className="text-gray-400 block hover:text-blue-600 transition duration-300">AI graduation thesis</a>
               </div>
             </div>
             <div>
