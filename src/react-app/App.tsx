@@ -152,8 +152,8 @@ const App: React.FC = () => {
               <p className="text-lg text-gray-600 mb-8">
                 your productivity, efficiency, quality
               </p>
-              <a href="#" className="inline-flex items-center px-6 py-3 bg-blue-600 text-white font-medium rounded-full hover:bg-blue-700 transition duration-300">
-                了解更多案例
+              <a href="https://www.booost.cc/" target="_blank" className="inline-flex items-center px-6 py-3 bg-blue-600 text-white font-medium rounded-full hover:bg-blue-700 transition duration-300">
+              Learn more
                 <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
                 </svg>
@@ -175,13 +175,13 @@ const App: React.FC = () => {
             <div className="md:w-1/2 md:pl-12 mb-8 md:mb-0">
               <div className="text-sm font-medium text-blue-600 mb-2">P/2</div>
               <h3 className="text-3xl md:text-4xl font-bold mb-6">
-                How Figma Academy used our platform to earn $300k with a design course
+              FineTabs Al New Tab
               </h3>
               <p className="text-lg text-gray-600 mb-8">
-                我们的学习平台帮助内容创作者构建高质量的线上课程，通过智能工具简化内容制作流程，提高学习体验和转化率。
+              Open your own world in a different way
               </p>
-              <a href="#" className="inline-flex items-center px-6 py-3 bg-blue-600 text-white font-medium rounded-full hover:bg-blue-700 transition duration-300">
-                了解更多案例
+              <a href="https://finetabs.com/" target="_blank" className="inline-flex items-center px-6 py-3 bg-blue-600 text-white font-medium rounded-full hover:bg-blue-700 transition duration-300">
+                Learn more
                 <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
                 </svg>
@@ -203,13 +203,13 @@ const App: React.FC = () => {
             <div className="md:w-1/2 md:pr-12 mb-8 md:mb-0">
               <div className="text-sm font-medium text-blue-600 mb-2">P/3</div>
               <h3 className="text-3xl md:text-4xl font-bold mb-6">
-               More
+              One-click typesetting of graduation thesis
               </h3>
               <p className="text-lg text-gray-600 mb-8">
-              农副产品溯源管理软件,包装分拣信息化管理软件,车联网智能监控管理软件,仓储信息化智慧管理软件,数据容灾备份自动化智慧软件
+              AI Thesis Formatter is a one-click tool that automatically formats your graduation paper to meet academic standards—adjusting fonts, spacing, citations, and more in minutes.
               </p>
-              <a href="#" className="inline-flex items-center px-6 py-3 bg-blue-600 text-white font-medium rounded-full hover:bg-blue-700 transition duration-300">
-                了解更多案例
+              <a href="https://paper.finetabs.com/#/paper" target="_blank" className="inline-flex items-center px-6 py-3 bg-blue-600 text-white font-medium rounded-full hover:bg-blue-700 transition duration-300">
+              Learn more
                 <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
                 </svg>
@@ -218,7 +218,7 @@ const App: React.FC = () => {
             <div className="md:w-1/2">
               <div className="overflow-hidden rounded-lg">
                 <img 
-                  src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" 
+                  src="/air.png" 
                   alt="Software Interface" 
                   className="w-full h-auto transform scale-105"
                 />
@@ -307,19 +307,19 @@ const App: React.FC = () => {
           {/* 第一行logo */}
           <div className="flex justify-between items-center mb-24 max-w-7xl mx-auto">
             <div className="flex-1 flex items-center justify-center animate-on-scroll">
-              <img src="https://img.alicdn.com/imgextra/i2/O1CN01vyfjJF1XOCcubJJ4k_!!6000000002913-2-tps-704-280.png" alt="Genting" className="max-h-48" />
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Shopify_logo_2018.svg/1024px-Shopify_logo_2018.svg.png" width={150} alt="Shopify" className="max-h-48" />
             </div>
             
             <div className="flex-1 flex items-center justify-center animate-on-scroll">
-              <img src="https://img.alicdn.com/imgextra/i1/O1CN01JNXSHD1y8AMFT0gAf_!!6000000006533-2-tps-704-280.png" alt="J&T Cargo" className="max-h-48" />
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/1206px-Amazon_logo.svg.png?20250504041148" width={120} alt="Amazon" className="max-h-48" />
             </div>
             
             <div className="flex-1 flex items-center justify-center animate-on-scroll">
-              <img src="https://img.alicdn.com/imgextra/i1/O1CN01JS3BHU1zUtetis1S2_!!6000000006718-2-tps-704-280.png" alt="Charles & Keith" className="max-h-48" />
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Shopee.svg/1600px-Shopee.svg.png" width={140} alt="Shopee" className="max-h-48" />
             </div>
             
             <div className="flex-1 flex items-center justify-center animate-on-scroll">
-              <img src="https://img.alicdn.com/imgextra/i2/O1CN01akgik31V83QnC5T8d_!!6000000002607-2-tps-704-280.png" alt="Kepi Kenangan" className="max-h-48" />
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/AliExpress_2024.svg/2880px-AliExpress_2024.svg.png" alt="AliExpress_2024" width={150} className="max-h-48" />
             </div>
           </div>
         </div>
@@ -362,13 +362,7 @@ const App: React.FC = () => {
                     <svg className="w-6 h-6 mr-3 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                     </svg>
-                    <span className="text-gray-600">2445008914@qq.com</span>
-                  </p>
-                  <p className="flex items-center">
-                    <svg className="w-6 h-6 mr-3 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
-                    </svg>
-                    <span className="text-gray-600">+(44) 7827 167562</span>
+                    <span className="text-gray-600">contact@wavesfuture.com</span>
                   </p>
                 </div>
               </div>
