@@ -72,10 +72,10 @@ const App: React.FC = () => {
           <div className="px-4 sm:px-6 lg:px-8">
             <div className="text-center max-w-3xl mx-auto">
               <h1 ref={titleRef} className="text-5xl sm:text-6xl md:text-7xl font-bold tracking-tight text-gray-900 animate-on-scroll">
-                We're building the future of <span className="text-blue-600">intelligent industry</span>
+              We are shaping the future of the <span className="text-blue-600">artificial intelligence industry</span>
               </h1>
               <p className="mt-8 max-w-2xl mx-auto text-xl text-gray-600 animate-on-scroll">
-                Pioneering AI technologies that empower e-commerce, agriculture, and logistics with smarter, more connected solutions.
+              Empowering industries like e-commerce, agriculture, and logistics with innovative AI technologies that enable smarter and more intuitive solutions.
               </p>
               <div className="mt-10 animate-on-scroll">
                 {/* 移除了Explore our technologies按钮 */}
@@ -90,7 +90,7 @@ const App: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-20 animate-on-scroll">
             <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
-              And the technologies that make it possible
+            Technology combined with innovation makes anything possible
             </h2>
             <div className="h-1 w-24 bg-blue-600 mx-auto"></div>
           </div>
@@ -98,18 +98,18 @@ const App: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {[
               {
-                title: "AI-Powered E-commerce",
-                description: "Creating intelligent product visuals in seconds—boosting click-through rates and sales with automated image generation and smart layout tools.",
+                title: "AI-Powered E-commerce Marketing Tool",
+                description: "Creating intelligent product visuals in seconds-boosting click-through rates and sales with automated image generation and smart layout tools.",
                 image: "https://images.unsplash.com/photo-1664447973006-ac31f9fdfac2?q=80&w=3132&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
               },
               {
-                title: "Smart Sales Enablement",
-                description: "Equipping merchants with AI-driven tools for content creation, visual optimization, and digital merchandising—turning traffic into revenue.",
+                title: "AI-Powered Sales System",
+                description: "Providing merchants with AI-driven tools for content creation, visual optimization, and digital marketing—turning traffic into revenue.",
                 image: "https://images.unsplash.com/photo-1586880244406-556ebe35f282?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
               },
               {
-                title: "Advanced R&D Capabilities",
-                description: "We develop AI and automation solutions that transform digital commerce—optimizing everything from agricultural traceability to warehouse and packaging automation.",
+                title: "AI-Powered Agricultural Solutions",
+                description: "Our AI and automation technologies are transforming digital commerce—optimizing everything from agricultural traceability to warehouse and packaging automation.",
                 image: "https://images.unsplash.com/photo-1568992687947-868a62a9f521?q=80&w=3132&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
               }
             ].map((tech, index) => (
@@ -147,10 +147,10 @@ const App: React.FC = () => {
             <div className="md:w-1/2 md:pr-12 mb-8 md:mb-0">
               <div className="text-sm font-medium text-blue-600 mb-2">P/1</div>
               <h3 className="text-3xl md:text-4xl font-bold mb-6">
-              Booost-your productivity, efficiency, quality
+              Boost
               </h3>
               <p className="text-lg text-gray-600 mb-8">
-                your productivity, efficiency, quality
+              Boost is an AI platform that generates product text and images for e-commerce sites. It provides seamless workflows for merchants, enhancing productivity, efficiency, and quality of product content through AI technology.
               </p>
               <a href="https://www.booost.cc/" target="_blank" className="inline-flex items-center px-6 py-3 bg-blue-600 text-white font-medium rounded-full hover:bg-blue-700 transition duration-300">
               Learn more
@@ -178,7 +178,7 @@ const App: React.FC = () => {
               FineTabs Al New Tab
               </h3>
               <p className="text-lg text-gray-600 mb-8">
-              Open your own world in a different way
+              FineTabs is an innovative browser extension that leverages AI-powered tools and desktop widgets to help users customize and streamline their browser homepage, enhancing both aesthetics and the overall browsing experience.
               </p>
               <a href="https://finetabs.com/" target="_blank" className="inline-flex items-center px-6 py-3 bg-blue-600 text-white font-medium rounded-full hover:bg-blue-700 transition duration-300">
                 Learn more
@@ -203,7 +203,7 @@ const App: React.FC = () => {
             <div className="md:w-1/2 md:pr-12 mb-8 md:mb-0">
               <div className="text-sm font-medium text-blue-600 mb-2">P/3</div>
               <h3 className="text-3xl md:text-4xl font-bold mb-6">
-              One-click typesetting of graduation thesis
+              AI Thesis Formatter
               </h3>
               <p className="text-lg text-gray-600 mb-8">
               AI Thesis Formatter is a one-click tool that automatically formats your graduation paper to meet academic standards—adjusting fonts, spacing, citations, and more in minutes.
@@ -243,50 +243,30 @@ const App: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-20">
             <h2 className="text-4xl font-bold text-white mb-6 animate-on-scroll">
-              Fuel growth with Wavesfuture's proven expertise and trusted reliability
+            Drive your growth with Wavesfuture’s trusted expertise <br/> and dependable solutions.
             </h2>
             <div className="h-1 w-24 bg-white mx-auto"></div>
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-12 text-center">
             <div className="animate-on-scroll">
-              <div className="text-4xl sm:text-5xl font-bold text-white mb-2">8</div>
+              <div className="text-4xl sm:text-5xl font-bold text-white mb-2">2</div>
               <div className="text-lg text-white opacity-90">Global offices</div>
             </div>
             
             <div className="animate-on-scroll">
-              <div className="text-4xl sm:text-5xl font-bold text-white mb-2">450</div>
+              <div className="text-4xl sm:text-5xl font-bold text-white mb-2">20</div>
               <div className="text-lg text-white opacity-90">Employees</div>
             </div>
             
             <div className="animate-on-scroll">
-              <div className="text-4xl sm:text-5xl font-bold text-white mb-2">1,200+</div>
-              <div className="text-lg text-white opacity-90">Carriers</div>
-            </div>
-            
-            <div className="animate-on-scroll">
-              <div className="text-4xl sm:text-5xl font-bold text-white mb-2">80+</div>
+              <div className="text-4xl sm:text-5xl font-bold text-white mb-2">10+</div>
               <div className="text-lg text-white opacity-90">Tech & platform partners</div>
             </div>
             
             <div className="animate-on-scroll">
               <div className="text-4xl sm:text-5xl font-bold text-white mb-2">20,000+</div>
               <div className="text-lg text-white opacity-90">Paid customers</div>
-            </div>
-            
-            <div className="animate-on-scroll">
-              <div className="text-4xl sm:text-5xl font-bold text-white mb-2">8B+</div>
-              <div className="text-lg text-white opacity-90">Tracked shipments</div>
-            </div>
-            
-            <div className="animate-on-scroll">
-              <div className="text-4xl sm:text-5xl font-bold text-white mb-2">11M+</div>
-              <div className="text-lg text-white opacity-90">Returns processed</div>
-            </div>
-            
-            <div className="animate-on-scroll">
-              <div className="text-4xl sm:text-5xl font-bold text-white mb-2">20+</div>
-              <div className="text-lg text-white opacity-90">Sales channels</div>
             </div>
           </div>
         </div>
@@ -342,7 +322,7 @@ const App: React.FC = () => {
               Get in touch with us
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto animate-on-scroll">
-              Have questions about our products or technologies? We're here to help you connect and explore the possibilities.
+            If you have any questions about our products or technologies, our team is here to support you and help you explore potential opportunities.
             </p>
           </div>
 
