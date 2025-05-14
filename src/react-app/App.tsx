@@ -72,7 +72,7 @@ const App: React.FC = () => {
           <div className="px-4 sm:px-6 lg:px-8">
             <div className="text-center max-w-5xl mx-auto">
               <h1 ref={titleRef} className="text-5xl sm:text-6xl md:text-7xl font-bold tracking-tight text-gray-900 animate-on-scroll">
-              We are shaping the future of the <span className="text-blue-600">artificial intelligence industry</span>
+              We are shaping the future using <span className="text-blue-600">AI to empower businesses.</span>
               </h1>
               <p className="mt-8 max-w-2xl mx-auto text-xl text-gray-600 animate-on-scroll">
               Empowering industries like e-commerce, agriculture, and logistics with innovative AI technologies that enable smarter and more intuitive solutions.
