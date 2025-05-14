@@ -133,12 +133,15 @@ const App: React.FC = () => {
       </section>
 
       {/* Product Showcase */}
-      <section id="products" className="py-24 bg-white">
+      <section id="products" className="pt-24 pb-12 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16 animate-on-scroll">
-            <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
+            <h2 className="text-4xl sm:text-5xl font-bold text-gray-900">
             Products
             </h2>
+            <p className="mt-2 mb-6 max-w-2xl mx-auto text-xl text-gray-400 animate-on-scroll">
+            We integrate AI capabilities into our product suite to create an efficient ecosystem for enterprise users.
+              </p>
             <div className="h-1 w-24 bg-blue-600 mx-auto"></div>
           </div>
 
@@ -214,7 +217,9 @@ const App: React.FC = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
                 </svg>
               </a>
+             
             </div>
+            
             <div className="md:w-1/2">
               <div className="overflow-hidden rounded-lg">
                 <img 
@@ -227,6 +232,7 @@ const App: React.FC = () => {
           </div>
 
         </div>
+        <h2 className="text-small font-bold text-gray-400 pt-20 animate-on-scroll text-center italic ">*Other Tools are under development...</h2>
       </section>
 
       {/* About Section */}
@@ -366,7 +372,7 @@ const App: React.FC = () => {
               <div className="space-y-2">
                 <a href="https://www.booost.cc/" target='_blank' className="text-gray-400 block hover:text-blue-600 transition duration-300">Booost</a>
                 <a href="https://finetabs.com/" target='_blank' className="text-gray-400 block hover:text-blue-600 transition duration-300">FineTabs</a>
-                <a href="https://paper.finetabs.com/#/paper" target='_blank' className="text-gray-400 block hover:text-blue-600 transition duration-300">AI graduation thesis</a>
+                <a href="https://paper.finetabs.com/#/paper" target='_blank' className="text-gray-400 block hover:text-blue-600 transition duration-300">AI Thesis Formatter</a>
               </div>
             </div>
             <div>
